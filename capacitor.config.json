@@ -1,0 +1,35 @@
+{
+  "appId": "recall.nearbyme.app",
+  "appName": "Nearby Me",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1500,
+      "launchAutoHide": true,
+      "backgroundColor": "#0b0f19",
+      "androidSplashResourceName": "splash_background",
+      "showSpinner": false,
+      "splashFullScreen": true,
+      "splashImmersive": true
+    },
+    "Camera": {
+      "permissions": ["camera"]
+    },
+    "Geolocation": {
+      "permissions": ["location"]
+    },
+    "PushNotifications": {
+      "presentationOptions": ["badge", "sound", "alert"]
+    },
+    "GoogleAuth": {
+      "scopes": ["profile", "email"],
+      "serverClientId": "18877084295-371asi0j4habfre4r992hti1ivlhvnj3.apps.googleusercontent.com",
+      "forceCodeForRefreshToken": true
+    }
+  },
+  "server": {
+    "androidScheme": "https",
+    "cleartext": false
+  }
+}

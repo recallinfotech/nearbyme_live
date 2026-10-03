@@ -41,3 +41,10 @@ app-example
 # generated native folders
 /ios
 /android
+
+# Custom ignores
+nearbyme_api/
+*.apk
+*.aab
+.idea/
+.vscode/
